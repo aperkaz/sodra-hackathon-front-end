@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+   <!-- <script
+            src="https://maps.googleapis.com/maps/api/js?callback=initMap">
+    </script>-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  <body>
+  <div class="header">
+
+    <h2>SkogGo</h2>
+    <a href="https://www.sodra.com/en/" target="_blank"><img src="images/sodra.png" id="sodraLogo" alt="Södra logo"/></a>
+    <div style="color: white;">
+      <img src="images/coins.png" id="coins" alt="picture of coins"/>
+      <p id="x_coins"> 100</p>
+      <p id="xp"> XP: 300/500</p>
+    </div>
+     <img src="images/menu.png" id="menu"/>
+  </div>
+
+  <div class="final-menu">
+
+  </div>
+
+  <div class="creature">
+    <h3> Creature </h3>
+
+    <img src=<%=creature%> id="creatureGif"/>
+    <div id = "aboutCreature">
+      <p>
+        <ul style="float: left;/* margin: 5px; */text-align: center;width: 100%;color: white">
+        <li>Name of your forest kingdom: <%= name%></li>
+        <li>Size of your kingdom: <%=area%> sqm</li>
+        <li>Height of your trees: <%=tree_height%> m</li>
+        <li>Last drone checkup: <%=drone%> </li>
+        <li>Quality of soil: <%=soil%></li>
+        <li>Weather: <img src="" id="weather"></li>
+      </ul>
+      </p>
+    </div>
+  </div>
+
+  <div class="map_ar">
+    <h3> This is your forest</h3>
+
+    <!--  <div id="map_btn">
+        <button type="button" name="ARBtn">AR</button>
+        <button type="buttin" name="mapBtn">map</button>
+      </div>-->
+
+
+    <div id="mapSlider">
+      <label class="switch">
+        <input type="checkbox" id="check">
+        <div class="slider round"></div>
+      </label>
+    </div>
+
+    <p id="p-Btn">
+      AR
+    </p>
+
+
+    <div id="map"><iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d68875.65178352712!2d14.255420650843112!3d57.35282844828896!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sse!4v1494719276881" width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe></div>
+    <div id="ar">
+      <img src='images/AR.png'>
+    </div>
+
+
+
+  </div>
+
+  <script type="text/javascript" src="javascripts/main.js"></script>
+
+  </body>
+
+</html>
